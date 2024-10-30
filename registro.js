@@ -39,3 +39,6 @@ signupBtn.addEventListener('click', (event)=>{
     console.log('Fin del metodo');
 });
 
+
+
+//ChartJS

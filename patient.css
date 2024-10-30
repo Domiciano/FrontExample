@@ -1,0 +1,11 @@
+#patientList div{
+    margin: 1rem;
+    width: 24rem;
+}
+
+#patientList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
