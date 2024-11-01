@@ -3,6 +3,10 @@
     width: 24rem;
 }
 
+.nicecard:hover{
+    background-color: cornflowerblue;
+}
+
 #patientList{
     display: flex;
     flex-direction: column;

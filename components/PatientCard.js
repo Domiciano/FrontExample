@@ -1,12 +1,19 @@
-class PatientCard{
+export default class PatientCard{
 
     constructor(user){
         this.user = user;
     }
 
+    onClick(){
+        let json = JSON.stringify(this.user);
+        window.localStorage.setItem('userClicked', json);
+        location.href = 'patientDetail.html';
+    }
+
     render() {
         let container = document.createElement('div'); //<div>
         container.classList.add('card');
+        container.classList.add('nicecard');
 
         let cardbody = document.createElement('div');
         cardbody.classList.add('card-body');
@@ -25,6 +32,10 @@ class PatientCard{
 
         title.textContent = this.user.name;
         description.textContent = this.user.email;
+
+
+        container.addEventListener('click', ()=>this.onClick() );
+
         return container;
     }
 
